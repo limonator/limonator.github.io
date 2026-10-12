@@ -1,1 +1,5 @@
   main:
+    - title: Proyectos
+      url: /proyectos/
+    - title: About me!
+      url: /about/

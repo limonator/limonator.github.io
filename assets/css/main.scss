@@ -6,3 +6,15 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+.masthead {
+  border-bottom: none;
+}
+.page__hero--overlay .wrapper {
+  padding-top: 3em;      // theme default is 6em
+  padding-bottom: 3em;
+
+  @include breakpoint($large) {
+    padding-top: 4em;    // theme default is 9em
+    padding-bottom: 4em;
+  }
+}

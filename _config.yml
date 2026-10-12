@@ -299,3 +299,24 @@ defaults:
     values:
       layout: single
       author_profile: true
+  - scope:
+      path: ""
+      type: proyectos
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      toc: true
+  - scope:
+      path: "_proyectos/ordenador-desde-0"
+    values:
+      sidebar:
+        nav: "ordenador-desde-0"
+
+#### CREACION DE ENTRADAS TIPO COLLECTION PARA LOS PROYECTOS ####
+collections:
+  proyectos:
+    output: true
+    permalink: /:collection/:path/
+
+
