@@ -1,0 +1,17 @@
+# /_data/authors.yml
+Limonator:
+  name        : "Limonator"
+  bio         : "La curiosidad es el motor del conocimiento"
+  avatar      : "/assets/images/limonator-avatar.png"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-square-envelope"
+      url: "mailto:davgravis@proton.me"
+    - #label: "Website"
+      #icon: "fas fa-fw fa-link"
+      #url: "https://thewhip.com"
+    - #label: "Twitter"
+      #icon: "fab fa-fw fa-square-x-twitter"
+      #url: "https://twitter.com/extravagantman"
+
+
