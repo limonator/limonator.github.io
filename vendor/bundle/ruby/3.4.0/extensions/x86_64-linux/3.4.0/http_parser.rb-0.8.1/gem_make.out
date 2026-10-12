@@ -1,0 +1,19 @@
+current directory: /home/platano/limonator_web/limonator.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+/usr/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/platano/limonator_web/limonator.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20261012-136044-og70yc sitelibdir\=./.gem.20261012-136044-og70yc clean
+
+current directory: /home/platano/limonator_web/limonator.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20261012-136044-og70yc sitelibdir\=./.gem.20261012-136044-og70yc
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: /home/platano/limonator_web/limonator.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20261012-136044-og70yc sitelibdir\=./.gem.20261012-136044-og70yc install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20261012-136044-og70yc
+
+current directory: /home/platano/limonator_web/limonator.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20261012-136044-og70yc sitelibdir\=./.gem.20261012-136044-og70yc clean

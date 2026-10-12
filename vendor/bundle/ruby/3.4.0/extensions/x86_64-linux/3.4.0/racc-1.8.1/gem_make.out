@@ -1,0 +1,18 @@
+current directory: /home/platano/limonator_web/limonator.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+/usr/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/platano/limonator_web/limonator.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20261012-184799-olo5j8 sitelibdir\=./.gem.20261012-184799-olo5j8 clean
+
+current directory: /home/platano/limonator_web/limonator.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20261012-184799-olo5j8 sitelibdir\=./.gem.20261012-184799-olo5j8
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/platano/limonator_web/limonator.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20261012-184799-olo5j8 sitelibdir\=./.gem.20261012-184799-olo5j8 install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20261012-184799-olo5j8/racc
+
+current directory: /home/platano/limonator_web/limonator.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20261012-184799-olo5j8 sitelibdir\=./.gem.20261012-184799-olo5j8 clean
