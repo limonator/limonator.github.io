@@ -307,16 +307,11 @@ defaults:
       author_profile: true
       share: true
       toc: true
-  - scope:
-      path: "_proyectos/ordenador-desde-0"
-    values:
-      sidebar:
-        nav: "ordenador-desde-0"
 
 #### CREACION DE ENTRADAS TIPO COLLECTION PARA LOS PROYECTOS ####
 collections:
   proyectos:
     output: true
-    permalink: /:collection/:path/
+    permalink: /proyectos/:path/
 
 
