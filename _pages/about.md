@@ -22,6 +22,6 @@ hecho yo y seguiré haciendo.
 
 # Aprendizaje
 Desde lo más personal creo que ***no se puede aprender con el mero estudio de la teoria***, la *práctica* y la *experimentación* hacen que ese conocimiento que hemos podido escuchar se 
-convierta en conovimiento real y aplicable. Pasar más alla de la teoria crea conexiones neuronales nuevas, que muchas veces mediante prueba y error acaban realizandose y permiten aumentar nuestra capacidad de solucionar problemas.
+convierta en conocimiento real y aplicable. Pasar más alla de la teoria crea conexiones neuronales nuevas, que muchas veces mediante prueba y error acaban realizandose y permiten aumentar nuestra capacidad de solucionar problemas.
 
 
