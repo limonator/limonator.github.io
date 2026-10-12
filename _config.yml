@@ -112,9 +112,9 @@ author:
   location         : "Madrid, Spain"
   email            : "davgravis@proton.me"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:davgravis@proton.me
+    - #label: "Email"
+      #icon: "fas fa-fw fa-envelope-square"
+      #url: mailto:davgravis@proton.me
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
