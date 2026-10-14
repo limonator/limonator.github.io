@@ -1,5 +1,8 @@
   main:
     - title: Proyectos
       url: /proyectos/
+      children:
+        - title: "Ordenador desde 0"
+          url: /proyectos/ordenador-desde-0
     - title: About me!
       url: /about/

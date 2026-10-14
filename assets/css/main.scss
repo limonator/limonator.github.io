@@ -5,6 +5,13 @@
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+
+// Ancho del sitio
+$max-width: 1800px;                 // por defecto 1280px
+$right-sidebar-width: 250px;        // por defecto 300px (también afecta al perfil de la izquierda)
+$right-sidebar-width-narrow: 200px; // por defecto 250px, para pantallas medianas
+
+@import "minimal-mistakes";
 @import "minimal-mistakes"; // main partials
 .masthead {
   border-bottom: none;
@@ -17,4 +24,13 @@
     padding-top: 4em;    // theme default is 9em
     padding-bottom: 4em;
   }
+}
+.archive__item-title a,
+.archive__item-title a:hover,
+.archive__item-title a:focus {
+  text-decoration: none;
+}
+.archive__subtitle {
+  padding-bottom: 0.8em;  // espacio entre el texto y la línea
+  margin-bottom: 1.8em;   // espacio entre la línea y las tarjetas
 }

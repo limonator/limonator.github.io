@@ -1,0 +1,11 @@
+{% assign notas = site.proyectos | where: "proyecto", include.proyecto | where: "kind", "nota" | sort: "order" %}
+<div class="notas-grid">
+{% for n in notas %}
+  <a class="nota-card" href="{{ n.url | relative_url }}">
+    <span class="nota-card__num">{% if n.order < 10 %}0{% endif %}{{ n.order }}</span>
+    <span class="nota-card__title">{{ n.title }}</span>
+    <span class="nota-card__excerpt">{{ n.excerpt | strip_html | strip | truncate: 110 }}</span>
+    <span class="nota-card__go">Leer nota →</span>
+  </a>
+{% endfor %}
+</div>
