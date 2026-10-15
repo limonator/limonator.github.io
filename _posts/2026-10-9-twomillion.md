@@ -46,7 +46,7 @@ Los puertos abiertos son los siguientes: `22 -> SSH, 80 -> HTTP`.
 > **IMPORTANTE** -> añadir al `/etc/hosts` la ip de la máquina!! 
 
 # Exploración de la web
-Encontramos la web antigua de HTB con su portal de acceso. Tras curiosear nos movemos hacia la pestaña de login que **requiere el hackeo del codigo de invitación**.
+Encontramos la web antigua de HTB con su portal de acceso. Tras curiosear nos movemos hacia la pestaña de login que **requiere el hackeo del código de invitación**.
 ![Invitacion](/assets/images/ctfs/twomillion/invite_code.png)
 {: .align-center}
 ## Código JS -> generando una invitación
@@ -98,7 +98,7 @@ Probamos en la consola de la web la función `makeInviteCode` y obtenemos un res
 }
 ```
 
-Utilizaré python para decodearlo, ya que buscando en google es una opcción mas rápida:
+Utilizaré python para decodearlo, ya que buscando en google es una opción mas rápida:
 ```python
 python3 -c "import codecs; print(codecs.decode('Va beqre gb trarengr gur vaivgr pbqr, znxr n CBFG erdhrfg gb', 'rot_13'))"
 ```
@@ -142,7 +142,7 @@ Nos preguntan lo siguiente:
 ### Task 5
 > What is the path to the endpoint the page uses when a user clicks on "Connection Pack"?
 
-Este boton es el de descarga para la VPN de HTB. Vamos hacia la url `2million.htb/home/access` y pasamos el tráfico por burpsuite. Vemos hacia que sitio va la petición GET para descarar el archivo:
+Este botón es el de descarga para la VPN de HTB. Vamos hacia la url `2million.htb/home/access` y pasamos el tráfico por burpsuite. Vemos hacia que sitio va la petición GET para descarar el archivo:
 ```http
 GET /api/v1/user/vpn/generate HTTP/1.1
 Host: 2million.htb
@@ -164,7 +164,7 @@ Connection: keep-alive
 ¿Que es un API endpoint?, como buenos hackers y pentesters que somos ==buscamos en google==.:
 >Un **endpoint de API** es una ***dirección digital específica (generalmente una URL) en un servidor donde una aplicación puede enviar una solicitud para obtener, crear, modificar o eliminar datos***
 
-Entonces necesitamos enumerar cuantos de estos hay. Antes de todo vamos a hechar un vistazo dentro de /api/v1:
+Entonces necesitamos enumerar cuantos de estos hay. Antes de todo vamos a echar un vistazo dentro de /api/v1:
 ```json
 {
   "v1": {
@@ -208,7 +208,7 @@ Por tanto **3** enpoints.
 # Elevando privilegios!
 No se me ocurre una forma sí de primeras. Si realizamos una petición por GET a `/api/v1/admin/auth` obtenemos un `HTTP/1.1 401 Unauthorized`. Confirmando que no somos admin.
 
-Después de mucho dolor de cabeza, muchas búsquedas y writeups leidos he llegado a la manera de enumerar como nuestro verifica si uno es administrador o no. Este es uno de mis primeros CTFs y la verdad que cuestan un poco estas partes!
+Después de mucho dolor de cabeza, muchas búsquedas y writeups leídos he llegado a la manera de enumerar como nuestro verifica si uno es administrador o no. Este es uno de mis primeros CTFs y la verdad que cuestan un poco estas partes!
 
 ## Probamos peticiones a recursos de la web:
 
@@ -334,11 +334,11 @@ DB_PASSWORD=SuperDuperPass123
 Encontramos la contraseña de admin. Y así podemos leer la flag.
 
 # Escalada de privilegios
-Esta escalada de privilegios corresponde al . [**CVE-2023–0386**](https://securitylabs.datadoghq.com/articles/overlayfs-cve-2023-0386/#how-the-cve-2023-0386-vulnerability-works) Quiero investigar y realizar un artículo entendiendo y explicando esta vulnerabilidad. Por ahora como buen script kiddie que soy (por el momento...) 
+Esta escalada de privilegios corresponde al . [**CVE-2023–0386**](https://securitylabs.datadoghq.com/articles/overlayfs-cve-2023-0386/#how-the-cve-2023-0386-vulnerability-works) Quiero investigar y realizar un artículo entendiendo y explicando esta vulnerabilidad. Por ahora como buen script kiddie que soy (por el momento...) ejecutamos el script y en un futuro subiré un artículo explicando lo aprendido del análisis del script para aprender como funciona.
 
 Después de un rato intentando hacer que el script funcionase, que compilasen los archivos .c me di cuenta que no estaba como admin. Una vez como admin nos traemos a la máquina desde local el repositorio y ejecutamos los programas tal como nos explica el repositorio de github del CVE.
 
-Finalmente, despues de toda la tarde, conseguimos la shell como root:
+Finalmente, después de toda la tarde, conseguimos la shell como root:
 ![Maquina Rooteada](/assets/images/ctfs/twomillion/rooted.png)
 {: .align-center}
 
