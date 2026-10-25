@@ -6,7 +6,6 @@ header:
     overlay_image: /assets/images/ctfs/connected/banner.jpg
     overlay_filter: 0.5 
     teaser: /assets/images/ctfs/connected/banner.jpg
-classes: wide
 toc: true
 toc_label: "Contenido"
 toc_icon: "list"
