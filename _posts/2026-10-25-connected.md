@@ -7,6 +7,10 @@ header:
     overlay_filter: 0.5 
     teaser: /assets/images/ctfs/connected/banner.jpg
 classes: wide
+toc: true
+toc_label: "Contenido"
+toc_icon: "list"
+toc_sticky: true
 ---
 Aprendiendo sobre **PBX**, **VoIP** y sobre las **SQLi** en múltiples CVE. Mejor freírse la cabeza que usar Metasploit.
 # Enumeración
