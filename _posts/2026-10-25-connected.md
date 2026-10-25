@@ -55,7 +55,7 @@ Desglosemos esto e intentemos entenderlo. **PBX** es en sí una *Private Branch 
 
 El VoIP sustituye un centro de telefonía físico por la versión de internet. Asterisk se encarga de realizar por debajo toda la gestión de las llamadas mediante VoIP. Esto de **VoIP** es algo muy sencillo: sustituye las llamadas telefónicas que se mueven a través de los clásicos cables de cobre por la línea de internet.
 
-## Versión Vulnerable ->  CVE-2025-61675, CVE-2025-57819
+## Versiones vulnerables!
 La versión de FreePBX 16 es vulnerable a **CVE-2025-61675** así como a **CVE-2025-57819**. 
 
 ### Entendiendo la CVE-2025-57819
