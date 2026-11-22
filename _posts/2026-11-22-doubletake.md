@@ -1,3 +1,13 @@
+---
+title: "Explotación de *sshole"
+date: 2026-11-22 
+excerpt: "Reventando SSH!"
+toc: true
+toc_label: "Contenido"
+toc_icon: "list"
+toc_sticky: true
+---
+
 Esta maquina trata la reciente vulnerabilidad encontrada en SSH.
 # Reconocimiento
 Realizamos el usual escaneo con **nmap** y obtenemos lo siguiente:
